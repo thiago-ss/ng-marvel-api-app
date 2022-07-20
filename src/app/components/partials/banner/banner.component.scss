@@ -1,0 +1,20 @@
+@import './../../../../assets/scss/variables.scss';
+
+div {
+    padding: 3px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+img {
+    height: 35px;
+}
+
+span {
+    padding: 0 5px;
+    background-color: $color-white;
+    color: $color-primary;
+    border-radius: 2px;
+    margin: 0 5px;
+}
