@@ -3,7 +3,6 @@ import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CharactersComponent } from './components/characters/characters.component';
@@ -19,6 +18,7 @@ import { ComicsComponent } from './components/comics/comics.component';
 import { EventsComponent } from './components/events/events.component';
 import { SeriesComponent } from './components/series/series.component';
 import { StoriesComponent } from './components/stories/stories.component';
+import { LoginComponent } from './components/partials/login/login.component';
 
 @NgModule({
   declarations: [
@@ -36,13 +36,14 @@ import { StoriesComponent } from './components/stories/stories.component';
     EventsComponent,
     SeriesComponent,
     StoriesComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
     InfiniteScrollModule,
-    FontAwesomeModule
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
@@ -50,4 +51,4 @@ import { StoriesComponent } from './components/stories/stories.component';
     CUSTOM_ELEMENTS_SCHEMA
   ],
 })
-export class AppModule { }
+export class AppModule {}
